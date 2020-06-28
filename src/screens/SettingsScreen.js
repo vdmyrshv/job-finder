@@ -1,10 +1,11 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import { Button } from 'react-native-elements'
 
-const SettingsScreen = () => {
+const SettingsScreen = ({navigation}) => {
     return (
         <View>
-            <Text>Settings</Text>
+            <Button title='Go to review screen' onPress={() => navigation.navigate('Review')} />
         </View>
     )
 }
